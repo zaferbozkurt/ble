@@ -51,7 +51,7 @@ function App(): JSX.Element {
 
     setTimeout(async () => {
       await BleManager.scan([], 0, true);
-    }, 2000);
+    }, 1000);
   };
 
   const handleBleManagerStopScan = () => {};
@@ -69,9 +69,7 @@ function App(): JSX.Element {
   };
 
   const handleBleManagerDiscoverPeripheral = (peripheral: {name: string; id: string; advertising: any; rssi: number}) => {
-    if (peripheral.name?.startsWith('AB21')) {
-      devicesRef.current[peripheral.id] = peripheral;
-    }
+    devicesRef.current[peripheral.id] = peripheral;
   };
 
   const generateSession = async () => {
