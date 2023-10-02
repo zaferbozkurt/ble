@@ -24,6 +24,8 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSExceptionDomains</key>
@@ -35,6 +37,10 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Please allow bluetooth so we can detect nearby parky devices.</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Please allow bluetooth so we can detect nearby parky devices.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
 	<key>UILaunchStoryboardName</key>
